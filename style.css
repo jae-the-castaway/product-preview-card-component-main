@@ -1,26 +1,144 @@
 /* General Properties */
 *,*::before,*::after {box-sizing: border-box;}
 
+html {
+    font-size: 14px;
+}
+
+.body {
+    background-color: hsl(30, 38%, 92%);
+}
 .box {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 25px;
 }
 
 /* Image Properties */
 
+.image {
+    width: 350px;
+    border-radius: 25px 25px 0 0;
+    grid-area: img;
+}
 
 
 /* Typography Properties */
+.item {
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    grid-area: header;
+}
 
 .title {
-    font-family: font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    color: hsl(212, 21%, 14%);
+    grid-area: title;
+    line-height: 1em;
 }
-
-
 
 .subtitle {
-    font-family: ;
-    font-size: 14px;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    grid-area: subtitle;
+    line-height: 1.75em;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+    grid-area: price;
+}
+
+.full-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    text-decoration-line: line-through;
+    display: inline-block;
+    grid-area: full-price;
+}
+
+.cart-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+/* Button Properties */
+
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    display: block;
+    grid-area: button;
+    /* width: 350px; */
+    margin: 5% 5% 10%;
+    border-radius: 10px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+    background-color: hsl(156, 48%, 17%);
+}
+
+.cart-icon {
+    display: inline-block;
+    margin: auto 10px;
+    vertical-align: text-bottom;
+
+}
+.cart-title {
+    display: inline-block;
+}
+
+/* content box  */
+.box {
+margin: 5% auto;
+display: grid;
+grid-template-columns: 175px 175px;
+grid-template-rows: auto 40px 80px 120px 50px 90px;
+grid-template-areas:
+  "img img"
+  "header header"
+  "title title"
+  "subtitle subtitle"
+  "price full-price"
+  "button button";
+  align-items: center;
+}
+
+.item, .title, .subtitle, .price, .full-price, .button {
+    margin: 0 25px;
 }
 
 
 
-/* Button Properties */
+/* Media query */
+
+
+  /* attribution */
+
+  .attribution {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .attribution a {
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+  }
+
+  .attribution a:hover {
+    color: hsl(156, 48%, 17%);
+
+  }
