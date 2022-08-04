@@ -1,0 +1,26 @@
+/* General Properties */
+*,*::before,*::after {box-sizing: border-box;}
+
+.box {
+}
+
+/* Image Properties */
+
+
+
+/* Typography Properties */
+
+.title {
+    font-family: font-family: 'Fraunces', serif;
+}
+
+
+
+.subtitle {
+    font-family: ;
+    font-size: 14px;
+}
+
+
+
+/* Button Properties */
